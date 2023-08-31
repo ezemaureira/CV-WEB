@@ -1,0 +1,310 @@
+@media screen and (max-width: 780px) {
+  .nav-list {
+    flex-direction: column;
+  }
+
+  .nav-list li {
+    text-align: left;
+  }
+
+  .nav-list li a {
+    padding: 15px 20px;
+  }
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  background-color: khaki;
+}
+
+
+
+/* Estilos de la barra de navegación */
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-list li {
+  flex: 1;
+  text-align: center;
+}
+
+.nav-list li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-list li a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Estilos de las secciones */
+section {
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid bisque;
+  border-radius: .5rem;
+}
+
+#datos {
+  display: flex;
+  /* Utilizamos flexbox para crear columnas flexibles */
+  justify-content: space-between;
+  /* Distribuye los elementos de manera uniforme */
+  background-color: black;
+}
+
+.datos_personales {
+  flex: 0.30;
+  background-color: khaki;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  border-radius: .25rem;
+  
+}
+.datos_personales .boton-contacto{
+  margin-left: 50%;
+}
+.datos_personales h3{
+  font-style: italic;
+  margin-left: 2rem;
+}
+.datos_personales ul {
+  margin-left: 3rem;
+  
+  /* Quita los puntos de la lista */
+  padding: 0;
+  /* Quita el espacio de padding en la lista */
+}
+
+.datos_personales li {
+  margin-bottom: 0.5rem;
+}
+
+/* estilo de la carta*/
+.cart {
+  max-width: 780px;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+  border: none;
+  border-radius: .25rem;
+  background-color: khaki;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  flex: 0.70;
+}
+
+.nav {
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.colum {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  position: relative;
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.col {
+  /*flex: 0 0 66.666667%;*/
+  flex: auto;
+  /*max-width: 66.666667%;*/
+  width: 100vh;
+  position: relative;
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-style: none;
+  border-top-left-radius: .25rem;
+  border-bottom-left-radius: .25rem;
+}
+
+.carta_cuerpo {
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+
+.carta_titulo {
+  margin-bottom: .75rem;
+}
+
+.carta_texto {
+  margin-bottom: 1.25rem;
+}
+
+.texto_secundario {
+  color: #6c757d;
+}
+iframe{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
+.contac{
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+}
+.contac p{
+  flex: 1;
+}
+.contac .boton-contac{
+  flex: 1;
+  margin-right: 1rem;
+  padding: 1em;
+}
+@media screen and (max-width: 768px) {
+  /* Cambio del diseño de las columnas en la sección "Datos" */
+  #datos {
+    flex-direction: column;
+  }
+  
+  .cart,
+  .datos_personales {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+/*acordeon*/
+.titulo-experiencia{
+  color: white;
+  text-align: center;
+}
+#experiencia{
+  background-color: black;
+}
+.acordeon{
+width: 100%;
+background-color: khaki;
+}
+.acordeon .bloque{
+  margin: 0 0 1rem;
+  padding: 2rem   ;
+
+}
+.acordeon .h2{
+margin: 0 0 1rem;
+text-align: center;
+}
+.acordeon .contenido{
+padding: 0;
+height: 0;
+overflow: hidden;
+transition: all .5s ease;
+}
+.acordeon .bloque.activo .contenido{
+height: 6rem;
+}
+
+@media screen and (min-width: 780px) {
+  .accordion li {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: top;
+    width: calc(50% - 5px);
+  }
+}
+
+/* pie de pagina footers*/
+.pie-de-pagina {
+  background-color: black;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  /* Alineación horizontal */
+  align-items: flex-end;
+  /* Alineación vertical */
+
+}
+
+.redes-sociales a {
+  margin: 10px 10px;
+}
+
+.enlace-instagram {
+  color: white;
+  padding: 2px;
+}
+
+.derecho_pie {
+  margin-bottom: 10px;
+}
+
+.boton-contacto {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*imagen de fondo en el inicio*/
+#inicio {
+  width: 96.5vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgb(0 0 0/.5), rgb(0 0 0/.5)), url(imagen_fondo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.tex {
+  text-align: center;
+  font-size: 1cm;
+  color: white;
+}
+
+#titulo {
+  font-style: italic;
+}
+/*formacion*/
+#formacion{
+  margin-bottom: 20px;
+  background-color: black;
+}
+#formacion h2{
+  color: white;
+
+}
+.lista-formacion{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background-color: khaki;
+  border-radius: 0.5;
+}
+
+.lista-formacion li{
+  color: black;
+}
