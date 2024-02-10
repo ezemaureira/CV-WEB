@@ -62,3 +62,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+// desplazamiento de la barra de navegacion 
+window.addEventListener('scroll', function(){
+  const navbar = document.querySelector('.navbar');
+  const scrollPosicion = window.scrollY;
+
+  if (scrollPosicion>=100) {
+    navbar.classList.add('fixed');
+  }else{
+    navbar.classList.remove('fixed');
+  }
+});

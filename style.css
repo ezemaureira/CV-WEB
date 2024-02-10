@@ -25,6 +25,7 @@ body {
 .navbar {
   background-color: #333;
   overflow: hidden;
+  z-index: 1000; /* Asegura que la barra esté por encima de otros elementos */
 }
 
 .nav-list {
@@ -51,7 +52,12 @@ body {
   background-color: #ddd;
   color: black;
 }
-
+.navbar.fixed{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+}
 /* Estilos de las secciones */
 section {
   padding: 20px;
@@ -269,7 +275,7 @@ height: 6rem;
 
 /*imagen de fondo en el inicio*/
 #inicio {
-  width: 96.5vw;
+  width: auto;
   height: 100vh;
   display: flex;
   align-items: center;
